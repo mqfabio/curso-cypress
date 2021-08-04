@@ -1,0 +1,46 @@
+PARA HABILITAR UM CHECKBOX OU ETC...
+- .click()
+- .check()
+-------------------------------------------------------
+
+PARA DESABILITAR UM CHECKBOX OU ETC...
+- .uncheck()
+
+-------------------------------------------------------
+
+PARA ESCREVER EM ALGUM INPUT...
+- .type("MSG")
+
+-------------------------------------------------------
+
+PARA VISITAR UM SITE...
+- cy.visit("URL")
+
+-------------------------------------------------------
+
+PARA SELECIONAR UMA CAIXA DE SELEÇÃO...
+- .select("num. da opção")
+
+-------------------------------------------------------
+
+PARA SABER SE ALGO CNTEM ALGUMA COISA...
+- .should("O QUE VC QUER SABER")
+
+-------------------------------------------------------
+
+
+PARA PROCURAR ALGO PELO ID...
+- cy.get("#ID DO ELEMENTO")
+
+EX:cy.get("#requests").type("Like meat")
+
+
+-------------------------------------------------------
+
+PARA PROCURAR ALGO PELA CLASSE...
+- cy.get(".CLASSE DO ELEMENTO")
+
+EX:  cy.get(".agreement p").should(
+            "contain",
+            `I, ${fullName}, wish to buy 2 VIP tickets`
+        )
